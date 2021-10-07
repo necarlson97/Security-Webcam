@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+    color: white;
+    
+    font-family: "Arial";
+}
+
+.parent {
+    font-size: 32;
+    width: 350px;
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+}
+
+
+.label {
+    font-size: 32;
+    position: absolute;
+    top:5px;
+    left:5px;
+}
+
+.blink {
+    -webkit-animation: blink 3s infinite; 
+}
+
+.display {
+    width: 200px;
+    border: 5px solid blue;
+    display: inline;
+}
+
+.hide {
+    //display: none;
+}
+
+@-webkit-keyframes blink {
+    0%{color: black;}
+    50%{color: white;}	
+    100%{color: black;}
+}
+
+

@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="download.js"></script>
+        <script src="Tone.min.js"></script>
+        <script src="jszip.min.js"></script>
+        <script src="FileSaver.min.js"></script>
+        <script src="gif.js"></script>
+        <script src="whammy.js"></script>
+        
+        <script src="script.js"></script>
+
+        <title>Security Cam</title>
+        <meta name="description" content="I C U">
+    </head>
+    <body>
+        
+        <br> Live Feed <br>
+        <video autoplay="true" id="live feed" class="display hide"></video>
+        <canvas id="frame capture canvas" class="display"> class="display"</canvas>
+
+        <br> Motion Filter <br>
+        <img id="motion base img" class="display hide">
+        <canvas id="motion canvas" class="display hide"></canvas>
+        
+        <br> Last Cap <br>
+        <img id="captured img" class="display hide">
+        <video id="captured video" class="display" autoplay="true" loop="infinite"></video>
+
+        <br>
+
+        <input id="download button" type="button" 
+               onclick="downloadZip()" value="download: 0">
+        <input id="reset" type="button" 
+               onclick="setBase()" value="reset">
+    </body>
+</html>
